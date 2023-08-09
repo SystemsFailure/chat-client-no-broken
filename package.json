@@ -9,10 +9,20 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
+    "axios": "^1.4.0",
+    "bootstrap-icons": "^1.10.5",
     "core-js": "^3.8.3",
+    "crypto-js": "^4.1.1",
+    "firebase": "^9.14.0",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.1",
     "register-service-worker": "^1.7.2",
+    "swiper": "^10.1.0",
     "vue": "^3.2.13",
+    "vue-awesome-swiper": "^5.0.1",
     "vue-router": "^4.0.3",
+    "vuefire": "^3.0.0-alpha.9",
     "vuex": "^4.0.0"
   },
   "devDependencies": {

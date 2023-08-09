@@ -1,30 +1,68 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <router-view></router-view>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script>
+
+export default {
+  name: 'App',
+  data() {
+    return {
+
+    }
+  },
+
+  components: {
+  },
+}
+</script>
+
+<style>
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-nav {
-  padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+body {
+  background-image: url(./assets/kit.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 0) inset;
+  background-color: #111;
+  position: absolute;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 21%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,
+  color-stop(.5, transparent), to(transparent));
+  border-radius: 15%;
+  position: absolute;
+
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 20%);
+  transition: .3s;
 }
 </style>
